@@ -49,11 +49,11 @@ For more information, please refer to:
  - BIG-IP Virtual Edition Image Version 13.0 or later
  - OpenStack Mitaka Deployment
 
-### Help
+### Getting Help
 While this template has been created by F5 Networks, it is in the experimental directory and therefore has not completed full testing and is subject to change.  F5 Networks does not offer technical support for templates in the experimental directory. For supported templates, see the templates in the **supported** directory.
 
 **Community Support**  
-We encourage you to use our [Slack channel](https://f5cloudsolutions.herokuapp.com) for discussion and assistance on F5 OpenStack Heat Orchestration templates. There are F5 employees who are members of this community who typically monitor the channel Monday-Friday 9-5 PST and will offer best-effort assistance. This slack channel community support should **not** be considered a substitute for F5 Technical Support.
+We encourage you to use our [Slack channel](https://f5cloudsolutions.herokuapp.com) for discussion and assistance on F5 OpenStack Heat Orchestration templates. There are F5 employees who are members of this community who typically monitor the channel Monday-Friday 9-5 PST and will offer best-effort assistance. This slack channel community support should **not** be considered a substitute for F5 Technical Support. See the [Slack Channel Statement](https://github.com/F5Networks/f5-openstack-hot/blob/master/slack-channel-statement.md) for guidelines on using this channel.
 
 ## Launching Stacks
 
@@ -161,11 +161,11 @@ The following parameters can be defined in your environment file.
 | autoscale_set_min_count | No | The minimum number of BIG-IP VE instance to deploy in the scaling group. |  |
 | autoscale_set_max_count | No | The maximum number of BIG-IP VE instances to deploy in the scaling group. |  |
 | os_username | Yes | User name for OpenStack account that can perform heat, ceilometer, and swift operations |  |
-| os_password | Password for OpenStack account that can perform heat, ceilometer, and swift operations |  |
+| os_password | Yes | Password for OpenStack account that can perform heat, ceilometer, and swift operations |  |
 | os_region | Yes | Region for OpenStack account that can perform  heat, ceilometer, and swift operations |  |
 | os_auth_url | Yes | Auth Endpoint URL for OpenStack account that can perform  heat, ceilometer, and swift operations |  |
 | os_auth_version | No | Version of the Auth URL | The default is **v3** |  |
-| os_domain_name | No | Name of the OpenStack account domain | The default is **default |  |
+| os_domain_name | No | Name of the OpenStack account domain | The default is **default** |  |
 
 <br>
 
